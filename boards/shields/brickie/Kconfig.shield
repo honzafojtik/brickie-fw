@@ -1,0 +1,5 @@
+config SHIELD_BRICKIE_LEFT
+    def_bool $(shields_list_contains,brickie_left)
+
+config SHIELD_BRICKIE_RIGHT
+    def_bool $(shields_list_contains,brickie_right)
