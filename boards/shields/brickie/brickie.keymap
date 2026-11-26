@@ -2,6 +2,16 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+
+    behaviors {
+      esc_tilde: esc_tilde {
+          compatible = "zmk,behavior-mod-morph";
+          #binding-cells = <0>;
+          bindings = <&kp ESC>, <&kp TILDE>;
+          mods = <(MOD_LSFT | MOD_RSFT)>;
+      };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
